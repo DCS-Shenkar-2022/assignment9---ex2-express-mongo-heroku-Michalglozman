@@ -1,5 +1,5 @@
 
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const user = mongoose.model('user', {
     id: {
@@ -11,6 +11,6 @@ const user = mongoose.model('user', {
     lname:{
         type: String
     }
-},'user')
+    },'user')
 
 module.exports = user

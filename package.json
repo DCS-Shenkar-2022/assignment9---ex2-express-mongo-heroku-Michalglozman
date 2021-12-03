@@ -17,8 +17,12 @@
   },
   "homepage": "https://github.com/DCS-Shenkar-2022/assignment9---ex2-express-mongo-heroku-Michalglozman#readme",
   "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mongodb": "^4.2.1",
-    "mongoose": "^6.0.14"
+    "mongoose": "^6.0.14",
+    "postman-request": "^2.88.1-postman.30",
+    "request": "^2.88.2"
   }
 }
