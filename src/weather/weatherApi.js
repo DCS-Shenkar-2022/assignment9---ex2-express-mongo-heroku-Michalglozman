@@ -30,13 +30,8 @@ const checkWheater = (city, date) => {
     }));
     return result;
 };
-module.exports = checkWheater
-// let firstDate = new Date("2021-12-03")
-// var result = checkWheater("Tel Aviv",firstDate);
+module.exports = checkWheater;
 
-// result.then((r) => {
-//     console.log(r)
-// })
 
 
 

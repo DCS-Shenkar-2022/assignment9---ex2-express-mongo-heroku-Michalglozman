@@ -1,5 +1,5 @@
 
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const flightData = mongoose.model('filight_data', {
     flight_id: {
@@ -19,4 +19,4 @@ const flightData = mongoose.model('filight_data', {
     }
 },'filight_data')
 
-module.exports = flightData
+module.exports = flightData;
