@@ -17,6 +17,6 @@ app.delete('/flights/:id',flightController.deleteFlight);
 app.post('/flights', flightController.newFlight);
 app.get('/flights/:id', flightController.flightData);
 
-app.listen(process.env.POST || 80, ()=> {
+app.listen(process.env.PORT || 3000, ()=> {
     console.log('Server on');
 });
