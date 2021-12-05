@@ -17,6 +17,6 @@ const flightData = mongoose.model('filight_data', {
     landing_date:{
         type: Date
     }
-},'filight_data')
+},'filight_data');
 
 module.exports = flightData;

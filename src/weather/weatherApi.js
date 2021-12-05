@@ -14,12 +14,12 @@ const checkWheater = (city, date) => {
     options.params.q = city;
     let result;
     result = axios.request(options).then((response) => {
-        var time = date.getTime();
-        var weather;
+        const time = date.getTime();
+        let weather;
         response.data.list.forEach(weatherData => {
-            var weatherDate = new Date(weatherData.dt_txt);
+            const weatherDate = new Date(weatherData.dt_txt);
             timeDifference = Math.abs(time - weatherDate.getTime());
-            let differentDays = Math.ceil(timeDifference / (1000 * 3600 * 24));
+            const differentDays = Math.ceil(timeDifference / (1000 * 3600 * 24));
             if(differentDays === 1) {
                 weather = JSON.stringify(weatherData.main);
             }

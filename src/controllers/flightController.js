@@ -4,9 +4,7 @@ const flightData = require('../model/flightData');
 const checkWheater = require('../weather/weatherApi');
 const user = require('../model/user');
 const { response } = require('express');
-
 const connectedUsers = [];
-const userList=[];
 
 exports.flightController = {
     auth(req,res) {
@@ -19,7 +17,6 @@ exports.flightController = {
             const responseJson = {};
             connectedUsers.push(key);
             console.log("adding " + key + " user " + userData);
-    
             setTimeout(()=>{
                 console.log("removing "+key);
                 index=connectedUsers.indexOf(key);
@@ -100,13 +97,9 @@ exports.flightController = {
             console.error(e);
             res.status(500).send();
         });
- 
-    }).catch((e) => {
-        console.error(e);
-        res.status(500).send();
-    });
+        }).catch((e) => {
+            console.error(e);
+            res.status(500).send();
+        });
     },
-
-    
-
 }

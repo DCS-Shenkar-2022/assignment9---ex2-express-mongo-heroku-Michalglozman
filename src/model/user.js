@@ -11,6 +11,6 @@ const user = mongoose.model('user', {
     lname:{
         type: String
     }
-    },'user')
+    },'user');
 
-module.exports = user
+module.exports = user;
